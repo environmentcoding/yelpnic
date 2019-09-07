@@ -10,12 +10,17 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-@import require_tree .
-@import require_self
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require popper
+//= require tether
+//= require bootstrap-sprockets
+//= require_tree 
  */
  
 // Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap";
+
 
 
 
