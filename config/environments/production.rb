@@ -1,4 +1,5 @@
 Rails.application.configure do
+  config.action_mailer.defailt_url_options = { host: 'yelpnic.herokuapp.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
