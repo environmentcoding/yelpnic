@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -39,15 +40,21 @@ body {
   
 }
 
-.navbar-brand {
-  color: black;
-
-}
 
 .navbar {
   background: image_url('beanstalk.png');
   box-shadow: 0px 1px 3px #2a2a2a;
 }
+
+
+.navbar-inverse .navbar-brand {
+  color: #1F85DE;
+  font-family: 'Gayathri', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.00000001px;
+  margin-top: 1%;
+}
+
 
 
 
