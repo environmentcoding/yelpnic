@@ -2,7 +2,7 @@
 
 KNOCK LIST
 
-Add pagination
+Add pagination leson maybe 15 or 17 nomster
 make all fonts my own
 work on design 
 
