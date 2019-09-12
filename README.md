@@ -2,6 +2,19 @@
 
 KNOCK LIST
 
+911-
+active record validation (lesson 28)
+  -address is present
+  - description is present
+  -name is present and has a legth greater than 3 characters
+
+
+  
+
+
+
+
+
 Add pagination leson maybe 15 or 17 nomster
 make all fonts my own
 work on design 
