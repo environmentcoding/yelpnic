@@ -32,7 +32,7 @@ class PlacesController < ApplicationController
   end
 
   def create
-    @place = current_user.places.create(place_params)
+    @place = current_usegit r.places.create(place_params)
       if @place.valid?
         redirect_to root_path
       else
@@ -84,7 +84,7 @@ class PlacesController < ApplicationController
   private
 
   def place_params
-    params.require(:place).permit(:name, :description, :address, :latitude, :longitude, :caption)
+    params.require(:place).permit(:name, :description, :address)
   end
 
 
