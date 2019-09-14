@@ -4,7 +4,7 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
-<%= simple_form_for @photo, url: 'place_photo_path' do |f| %>
+<%= simple_form_for @photo, url: 'place_photos_path' do |f| %>
   <%= f.input :caption %>
   <%= f.input :picture %>
   <%= f.submit "Add Photo", class: 'btn btn-primary' %>
