@@ -1,24 +1,3 @@
-# # class PlacesController < ApplicationController
-# # end
-
-# class PlacesController < ApplicationController
-
-
-#   def index
-#   end
-
-
-
-
-# end
-
-
-#-------------v2--------------------
-
-
-# class PlacesController < ApplicationController
-# end
-
 class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
@@ -84,7 +63,7 @@ class PlacesController < ApplicationController
   private
 
   def place_params
-    params.require(:place).permit(:name, :description, :address, :latitude, :longitude, :caption)
+    params.require(:place).permit(:name, :description, :address)
   end
 
 
