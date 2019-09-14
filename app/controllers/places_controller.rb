@@ -30,7 +30,7 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
 
     if @place.user != current_user
-        return render plain: 'Not Allowed' , status: :forbidden
+        return render plain: 'This place can only be edited by creator' , status: :forbidden
       end
   end
 
@@ -39,10 +39,11 @@ class PlacesController < ApplicationController
 
 
     if @place.user != current_user
-      return render plain: 'Not Allowed', status: :forbidden
+      return render plain: 'This place can only be edited by creator', status: :forbidden
     end
 
     @place.update_attributes(place_params)
+    
     if @place.valid?
       redirect_to root_path
     else
